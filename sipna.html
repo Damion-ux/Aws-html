@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipna C.O.E.T, Amravati</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        
+        /* Header */
+        .header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* Image Slider */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            max-height: 400px; /* Adjust image height */
+        }
+        .fade {
+            animation: fade 2s infinite;
+        }
+        @keyframes fade {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        /* Welcome Section */
+        .welcome {
+            padding: 40px;
+            background: white;
+            text-align: center;
+        }
+
+        /* Info Sections */
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .info-box {
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Sipna College of Engineering & Technology, Amravati</h1>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slides fade" src="s1_small.jpg" alt="Classroom">
+        <img class="slides fade" src="sl_small.jpg" alt="College Logo">
+        <img class="slides fade" src="23_small.jpg" alt="College Building">
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h2>Welcome to Sipna C.O.E.T, Amravati</h2>
+        <p>Sipna Shikshan Prasarak Mandal, established in 1995, aims to impart higher & technical education to enthusiastic youths and envision them for a better tomorrow.</p>
+        <p>Since its inception, SSPM has been successfully running undergraduate and postgraduate courses in emerging areas through Sipna’s Arts, Science & Commerce college, Chikhaldara, and Sipna College of Engineering & Technology, Amravati, affiliated with Sant Gadge Baba Amravati University.</p>
+    </div>
+
+    <!-- Recognitions Section -->
+    <div class="info-container">
+        <div class="info-box">
+            <h3>Vision</h3>
+            <p>To provide quality professional education and a conducive environment for students to emerge as a model proficient institute.</p>
+        </div>
+        <div class="info-box">
+            <h3>Mission</h3>
+            <p>To create a scholarly and vibrant environment for professional excellence and contribute to the advancement of knowledge in basic and applied areas of engineering and technology.</p>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <div class="info-container">
+        <div class="info-box">
+            <h3>150+</h3>
+            <p>Qualified Faculties</p>
+        </div>
+        <div class="info-box">
+            <h3>300+</h3>
+            <p>Placements</p>
+        </div>
+        <div class="info-box">
+            <h3>5800+</h3>
+            <p>Alumni</p>
+        </div>
+        <div class="info-box">
+            <h3>48800 Sq. M</h3>
+            <p>Campus</p>
+        </div>
+    </div>
+
+    <!-- R&D Cell -->
+    <div class="welcome">
+        <h2>R&D Cell</h2>
+        <p>The Multidisciplinary Research Centre at Sipna C.O.E.T is established to foster research and promote effective research management at the institution.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Sipna College of Engineering & Technology, Amravati | All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript for Image Slideshow -->
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+
+</body>
+</html>
+
+
+
